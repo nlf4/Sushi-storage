@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+    background-image: url(images/sushi.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
+    fill: beige;
+    background: rgba(44, 43, 43, 0.356);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgb(37, 35, 35);
+}
+.wrapper {
+    padding: 20px;
+    max-width: 350px;
+    background-color: rgba(229, 243, 245, 0.664);
+    box-shadow: 0 10px 10px rgba(31, 17, 17, 0.849);
+}
+h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+  }
