@@ -15,7 +15,7 @@ img {
     height: 200px;
     width: 200px;
     fill: beige;
-    background: rgba(44, 43, 43, 0.356);
+    background: rgba(44, 43, 43, 0.493);
     border-radius: 50%;
     box-shadow: 0 5px 10px rgb(37, 35, 35);
 }
@@ -23,10 +23,55 @@ img {
     padding: 20px;
     max-width: 350px;
     background-color: rgba(229, 243, 245, 0.664);
-    box-shadow: 0 10px 10px rgba(31, 17, 17, 0.849);
+    box-shadow: 7px 7px 7px 7px rgba(31, 17, 17, 0.514);
 }
 h2 {
     text-align: center;
     margin: 0;
     font-weight: 200;
+  }
+
+  .plates {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      list-style: none;
+  }
+
+  .plates li {
+      border-bottom: 0 1px black;
+      padding: 10px, 0;
+      font-weight: 100;
+      display: flex;
+
+  }
+
+
+  .plates label {
+      flex: 1;
+      cursor: pointer;
+  }
+
+  .plates input {
+      display: none;
+  }
+
+  .plates input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+  }
+
+  .plates input:checked + label:before {
+    content: ':)';
+    text-decoration: strikethrough;
+  }
+
+  .add-items {
+    margin-top: 20px;
+  }
+
+  .add-items input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
   }
